@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tunay na Tindahan - Order Online</title>
+  <link rel="stylesheet" href="estilo/pagsubok.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <div class="pk-wrap">
+    <a class="pk-back" href="index.html">← Practice pages</a>
+
+    <header class="pk-top">
+      <div class="pk-logo">🍖</div>
+      <div>
+        <h1>Tunay na Tindahan</h1>
+        <p>Verified online food ordering · Sorsogon City</p>
+      </div>
+      <nav class="pk-nav">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#terms">Terms</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="pk-hero">
+      <span class="pk-tag">Verified seller</span>
+      <h2>Lechon, pancit and grilled favorites</h2>
+      <p>Order for pickup or delivery inside Sorsogon City. Payment is handled by PayMongo. Every order comes with an official receipt.</p>
+    </section>
+
+    <div class="pk-grid">
+      <div>
+        <div class="pk-card">
+          <h2>Menu</h2>
+          <div data-menu>
+            <div class="pk-item" data-menu-price="150">
+              <div>
+                <b>Lechon Meal</b>
+                <small>Crispy lechon belly with rice and atsara</small>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱150.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="99">
+              <div>
+                <b>Pancit Guisado</b>
+                <small>Bihon noodles with vegetables and pork</small>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱99.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="120">
+              <div>
+                <b>Grilled Bangus</b>
+                <small>Milkfish stuffed with tomatoes and onion</small>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱120.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <p class="pk-note">Delivery fee is ₱30.00 inside Sorsogon City. The fee is shown on the menu and on the checkout summary.</p>
+        </div>
+
+        <div class="pk-card" id="about">
+          <h2>About the seller</h2>
+          <p class="pk-info">
+            <b>Tunay na Tindahan Food Services</b><br />
+            DTI Registration No. 2026-004821<br />
+            Business Permit No. 2026-1180, Sorsogon City<br />
+            Open daily from 9:00 AM to 8:00 PM
+          </p>
+          <p class="pk-note">We have been serving the Sorsogon community since 2019. Our kitchen is inspected every quarter.</p>
+        </div>
+
+        <div class="pk-card">
+          <h2>Reviews</h2>
+          <div data-review data-rating="5" data-review-time="2026-06-02T10:00:00+08:00" class="pk-review">
+            <b>Maria L.</b><span class="pk-stars">★★★★★</span>
+            <p>The lechon was crispy and the rice was still warm when it arrived. Official receipt was included.</p>
+            <time>2 June 2026</time>
+          </div>
+          <div data-review data-rating="4" data-review-time="2026-06-11T18:20:00+08:00" class="pk-review">
+            <b>Joshua R.</b><span class="pk-stars">★★★★☆</span>
+            <p>Pancit serving is generous. Delivery took a little longer on a rainy day but the rider called ahead.</p>
+            <time>11 June 2026</time>
+          </div>
+          <div data-review data-rating="5" data-review-time="2026-06-19T12:40:00+08:00" class="pk-review">
+            <b>Ana P.</b><span class="pk-stars">★★★★★</span>
+            <p>Ordered the grilled bangus for lunch. Fresh, well packed and the price matched the menu.</p>
+            <time>19 June 2026</time>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="pk-card" data-checkout>
+          <h2>Your order</h2>
+          <div class="pk-row"><span>Lechon Meal × 1</span><span data-checkout-price="150">₱150.00</span></div>
+          <div class="pk-row"><span>Pancit Guisado × 1</span><span data-checkout-price="99">₱99.00</span></div>
+          <div class="pk-row"><span>Grilled Bangus × 1</span><span data-checkout-price="120">₱120.00</span></div>
+          <div class="pk-row"><span>Delivery fee</span><span>₱30.00</span></div>
+          <div class="pk-row pk-total"><span>Total</span><span>₱399.00</span></div>
+
+          <div style="margin-top:16px">
+            <label class="pk-field">
+              <span>Full name</span>
+              <input type="text" name="customer_name" placeholder="Your name" />
+            </label>
+            <label class="pk-field">
+              <span>Mobile number</span>
+              <input type="tel" name="customer_phone" placeholder="09XX XXX XXXX" />
+            </label>
+            <label class="pk-field">
+              <span>Delivery address</span>
+              <input type="text" name="delivery_address" placeholder="House, street, barangay" />
+            </label>
+          </div>
+
+          <a class="pk-btn" href="https://paymongo.com" target="_blank" rel="noopener">Pay with PayMongo</a>
+          <p class="pk-note">You will finish payment on the PayMongo page. Your card details are never typed on this site.</p>
+        </div>
+
+        <div class="pk-card" id="contact">
+          <h2>Contact</h2>
+          <p class="pk-info">
+            Mobile: <b>0917 555 0123</b><br />
+            Email: hello@tunaynatindahan.ph<br />
+            Store: Rizal Street, Barangay Poblacion, Sorsogon City
+          </p>
+        </div>
+
+        <div class="pk-card" id="terms">
+          <h2>Terms and privacy</h2>
+          <p class="pk-info">Orders may be cancelled before the kitchen starts cooking. Personal details are used only to deliver the order. We do not store payment card numbers.</p>
+        </div>
+      </aside>
+    </div>
+
+    <p class="pk-fine">Tunay na Tindahan Food Services · DTI 2026-004821 · Sorsogon City</p>
+  </div>
+
+  <div class="pk-practice">Practice page · <a href="index.html">back to hub</a></div>
+</body>
+</html>

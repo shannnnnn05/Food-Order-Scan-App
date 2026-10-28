@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Milk Tea Express - Order Online</title>
+  <link rel="stylesheet" href="estilo/pagsubok.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <div class="pk-wrap">
+    <a class="pk-back" href="index.html">← Practice pages</a>
+
+    <header class="pk-top">
+      <div class="pk-logo">🧋</div>
+      <div>
+        <h1>Milk Tea Express</h1>
+        <p>Free delivery promo · Order online</p>
+      </div>
+      <nav class="pk-nav">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="pk-hero">
+      <span class="pk-tag">Big cup promo</span>
+      <h2>Buy 2 large cups, get free delivery</h2>
+      <p>Pearl milk tea, fruit tea and coffee blends. Order online and pay cash on delivery.</p>
+    </section>
+
+    <div class="pk-grid">
+      <div>
+        <div class="pk-card">
+          <h2>Menu</h2>
+          <div data-menu>
+            <div class="pk-item" data-menu-price="89">
+              <div><b>Classic Milk Tea</b><small>Large, 50% sugar, pearls</small></div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱89.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="120">
+              <div><b>Wintermelon Special</b><small>Large, with pudding</small></div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱120.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="95">
+              <div><b>Okinawa Milk Tea</b><small>Medium, 75% sugar</small></div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱95.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <p class="pk-note">Free delivery on orders above ₱300.00. Cash on delivery is accepted.</p>
+        </div>
+
+        <div class="pk-card" id="about">
+          <h2>About us</h2>
+          <p class="pk-info">Milk Tea Express is a small family shop serving pearl milk tea, fruit tea and rice meals. Open daily from 10:00 AM to 9:00 PM.</p>
+        </div>
+
+        <div class="pk-card">
+          <h2>Reviews</h2>
+          <div data-review data-rating="5" data-review-time="2026-05-08T14:00:00+08:00" class="pk-review">
+            <b>Kim A.</b><span class="pk-stars">★★★★★</span>
+            <p>Pearls are chewy and the tea is not too sweet. Delivery arrived before the estimated time.</p>
+            <time>8 May 2026</time>
+          </div>
+          <div data-review data-rating="4" data-review-time="2026-05-21T16:30:00+08:00" class="pk-review">
+            <b>Dennis C.</b><span class="pk-stars">★★★★☆</span>
+            <p>Good wintermelon flavor. The cup was sealed properly and the rider was courteous.</p>
+            <time>21 May 2026</time>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="pk-card" data-checkout>
+          <h2>Your order</h2>
+          <div class="pk-row"><span>Classic Milk Tea × 1</span><span data-checkout-price="129">₱129.00</span></div>
+          <div class="pk-row"><span>Wintermelon Special × 1</span><span data-checkout-price="160">₱160.00</span></div>
+          <div class="pk-row"><span>Okinawa Milk Tea × 1</span><span data-checkout-price="135">₱135.00</span></div>
+          <div class="pk-row pk-fee"><span>Service fee</span><span>₱25.00</span></div>
+          <div class="pk-row pk-total"><span>Total</span><span>₱449.00</span></div>
+
+          <div style="margin-top:14px">
+            <label class="pk-field">
+              <span>Name</span>
+              <input type="text" name="customer_name" placeholder="Your name" />
+            </label>
+            <label class="pk-field">
+              <span>Mobile number</span>
+              <input type="tel" name="customer_phone" placeholder="09XX XXX XXXX" />
+            </label>
+            <label class="pk-field">
+              <span>Delivery address</span>
+              <input type="text" name="delivery_address" placeholder="House, street, barangay" />
+            </label>
+          </div>
+
+          <button class="pk-btn" type="button">Place order (cash on delivery)</button>
+          <p class="pk-note">A rider will call you before delivery. Please prepare the exact amount.</p>
+        </div>
+
+        <div class="pk-card" id="contact">
+          <h2>Contact</h2>
+          <p class="pk-info">
+            Mobile: <b>0918 442 7788</b><br />
+            Email: orders@milkteaexpress.ph<br />
+            Shop: Rizal Street, Barangay Poblacion, Sorsogon City
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <p class="pk-fine">Milk Tea Express · Sorsogon City</p>
+  </div>
+
+  <div class="pk-practice">Practice page · <a href="index.html">back to hub</a></div>
+</body>
+</html>

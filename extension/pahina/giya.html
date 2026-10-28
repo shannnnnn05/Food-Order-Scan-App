@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LigtasPangan - Install Home</title>
+  <link rel="stylesheet" href="../estilo/itsura.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <div class="lp-shell">
+    <header class="lp-topbar">
+      <div class="lp-mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M12 2.5 4.5 5.6v6.1c0 4.6 3.1 8.6 7.5 9.8 4.4-1.2 7.5-5.2 7.5-9.8V5.6L12 2.5Z" fill="none" stroke="#67e8f9" stroke-width="1.7" stroke-linejoin="round" />
+          <path d="m8.9 12.1 2.1 2.1 4.2-4.4" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div>
+        <div class="lp-brandname">Ligtas<span>Pangan</span></div>
+        <div class="lp-brandsub">install home</div>
+      </div>
+      <nav class="lp-nav">
+        <a href="pilian.html">Settings</a>
+        <span class="lp-badge lp-badge--safe" id="lp-install-state">Installed</span>
+      </nav>
+    </header>
+
+    <section class="lp-hero">
+      <div>
+        <span class="lp-eyebrow"><i></i> Browser extension for food ordering safety</span>
+        <h1 style="margin-top:16px">Know if a food page is safe before you pay.</h1>
+        <p class="lp-lead">LigtasPangan checks the public content and payment form of online food ordering pages. It looks for fake sellers, phishing payment forms, price traps and fabricated reviews, then warns you in plain language.</p>
+        <div class="lp-hero__actions">
+          <button class="lp-btn lp-btn--primary" id="lp-open-tests" type="button">Open the test pages</button>
+          <button class="lp-btn" id="lp-open-settings" type="button">Open settings</button>
+        </div>
+        <p class="lp-note" style="margin-top:14px">The scanner is already active in this browser. Open any food ordering page and the result appears automatically.</p>
+      </div>
+      <div class="lp-visual">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <span class="lp-badge lp-badge--violet">Live check</span>
+          <span class="lp-badge lp-badge--safe">Ready</span>
+        </div>
+        <div class="lp-visual__row"><b>menu.example.ph</b><span>food page</span></div>
+        <div class="lp-scanline"></div>
+        <div class="lp-visual__row"><b>Payment form</b><span>card + PIN</span></div>
+        <div class="lp-visual__row"><b>Seller permit</b><span>not found</span></div>
+        <div class="lp-visual__row"><b>Verdict</b><span style="color:#f87171">unsafe</span></div>
+        <div class="lp-visual__row"><b>Risk score</b><span style="color:#f87171">91 / 100</span></div>
+      </div>
+    </section>
+
+    <div class="lp-grid lp-grid--4" style="margin-top:30px">
+      <div class="lp-stat">
+        <div class="lp-stat__label">Ratings</div>
+        <div class="lp-stat__value">0.0</div>
+        <div class="lp-stat__hint">No ratings yet</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat__label">Reviews</div>
+        <div class="lp-stat__value">0</div>
+        <div class="lp-stat__hint">No reviews yet</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat__label">Verified sellers</div>
+        <div class="lp-stat__value">0</div>
+        <div class="lp-stat__hint">No sellers verified yet</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat__label">Community reports</div>
+        <div class="lp-stat__value violet" id="lp-home-reports">0</div>
+        <div class="lp-stat__hint">No reports submitted</div>
+      </div>
+    </div>
+
+    <hr class="lp-divider" />
+
+    <h2 style="margin-top:0">What you will see</h2>
+    <div class="lp-grid lp-grid--2">
+      <div class="lp-card lp-card--glow">
+        <span class="lp-badge lp-badge--safe">Safe page</span>
+        <h3 style="margin:12px 0 6px;font-size:17px">This is a safe and good food ordering app</h3>
+        <p class="lp-note" style="margin:0">A green message confirms the page passed the check. You can order normally, and the badge stays at the bottom right with the risk score.</p>
+      </div>
+      <div class="lp-card" style="border-color:rgba(239,68,68,0.32)">
+        <span class="lp-badge lp-badge--danger">Unsafe page</span>
+        <h3 style="margin:12px 0 6px;font-size:17px">This Page is not safe, see it for yourself. Just click the OK to proceed</h3>
+        <p class="lp-note" style="margin:0">A red warning bar appears at the top of the page first. Press OK to open the full alert page, which lists every reason the page was flagged and what you should do next.</p>
+      </div>
+    </div>
+
+    <h2>Installation</h2>
+    <div class="lp-grid lp-grid--3">
+      <div class="lp-step">
+        <div class="lp-step__num">01</div>
+        <div>
+          <b>Open your browser extensions page</b>
+          <p>Chrome: go to <span class="lp-kbd">chrome://extensions</span>. Edge: go to <span class="lp-kbd">edge://extensions</span>.</p>
+        </div>
+      </div>
+      <div class="lp-step">
+        <div class="lp-step__num">02</div>
+        <div>
+          <b>Load the extension folder</b>
+          <p>Turn on Developer mode, choose Load unpacked, then select the <span class="lp-kbd">extension</span> folder from this project.</p>
+        </div>
+      </div>
+      <div class="lp-step">
+        <div class="lp-step__num">03</div>
+        <div>
+          <b>Pin the icon</b>
+          <p>Click the puzzle piece in the toolbar and pin LigtasPangan. Open a food ordering page to see the badge and the result.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lp-card" style="margin-top:14px">
+      <p class="lp-note" style="margin:0">If this page opened by itself, the installation already finished. To test the scanner, start the local test server from the project folder with <span class="lp-code">node serve/server.js</span>, then open <span class="lp-code">http://127.0.0.1:4173/pagsubok/</span>.</p>
+    </div>
+
+    <h2>What the scanner checks</h2>
+    <div class="lp-grid lp-grid--3">
+      <div class="lp-card">
+        <span class="lp-badge lp-badge--violet">Seller identity</span>
+        <p class="lp-note" style="margin:10px 0 0">Business permit, physical address, contact number and about or contact pages.</p>
+      </div>
+      <div class="lp-card">
+        <span class="lp-badge lp-badge--violet">Payment safety</span>
+        <p class="lp-note" style="margin:10px 0 0">Card and PIN fields, insecure form actions, cross-site form targets and known payment gateways.</p>
+      </div>
+      <div class="lp-card">
+        <span class="lp-badge lp-badge--violet">Price honesty</span>
+        <p class="lp-note" style="margin:10px 0 0">Menu price against checkout price, plus fees that appear only at the last step.</p>
+      </div>
+      <div class="lp-card">
+        <span class="lp-badge lp-badge--violet">Review quality</span>
+        <p class="lp-note" style="margin:10px 0 0">Repeated wording and bursts of perfect reviews posted within a short time.</p>
+      </div>
+      <div class="lp-card">
+        <span class="lp-badge lp-badge--violet">Domain risk</span>
+        <p class="lp-note" style="margin:10px 0 0">Missing HTTPS, raw IP addresses, punycode brand imitation, hyphens and high-abuse domains.</p>
+      </div>
+      <div class="lp-card">
+        <span class="lp-badge lp-badge--violet">Advance payment</span>
+        <p class="lp-note" style="margin:10px 0 0">Full payment demands without a recognized gateway or verifiable seller details.</p>
+      </div>
+    </div>
+
+    <h2>Test pages</h2>
+    <div class="lp-card">
+      <p class="lp-note" style="margin-top:0">The project includes six practice pages. Each one is built to trigger a specific result so you can check that the scanner works.</p>
+      <table class="lp-table" style="margin-top:12px">
+        <thead>
+          <tr><th>Page</th><th>Scenario</th><th>Expected result</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tunay na Tindahan</td><td>Complete permit, address, phone and gateway</td><td><span class="lp-badge lp-badge--safe">Safe</span></td></tr>
+          <tr><td>Pekeng Kusina</td><td>No identity, card fields, price jump, fake reviews</td><td><span class="lp-badge lp-badge--danger">Unsafe</span></td></tr>
+          <tr><td>Pekeng Bayaran</td><td>Phishing card, password and PIN form</td><td><span class="lp-badge lp-badge--danger">Unsafe</span></td></tr>
+          <tr><td>Presyong Panlinlang</td><td>Hidden fees and inflated checkout price</td><td><span class="lp-badge lp-badge--caution">Caution</span></td></tr>
+          <tr><td>Pekeng Rebyu</td><td>Copied five-star reviews in one burst</td><td><span class="lp-badge lp-badge--caution">Caution</span></td></tr>
+          <tr><td>Pekeng Kantina</td><td>Fake campus canteen asking for advance GCash and a PIN</td><td><span class="lp-badge lp-badge--danger">Unsafe</span></td></tr>
+        </tbody>
+      </table>
+      <div style="display:flex;gap:8px;margin-top:14px">
+        <button class="lp-btn lp-btn--primary" id="lp-open-tests-2" type="button">Open test hub</button>
+      </div>
+      <p class="lp-note" style="margin:10px 0 0">Test pages are served from <span class="lp-code">http://127.0.0.1:4173/pagsubok/</span>. Keep the local server running while testing.</p>
+    </div>
+
+    <h2>Permissions</h2>
+    <div class="lp-card">
+      <div class="lp-field">
+        <div>
+          <div class="lp-field__label">storage</div>
+          <div class="lp-field__hint">Saves your settings, trusted and blocked seller lists, the reports you submit and the log of every check.</div>
+        </div>
+      </div>
+      <div class="lp-field">
+        <div>
+          <div class="lp-field__label">tabs</div>
+          <div class="lp-field__hint">Reads the address of the page you are on so the badge and popup can show its result.</div>
+        </div>
+      </div>
+      <div class="lp-field">
+        <div>
+          <div class="lp-field__label">identity</div>
+          <div class="lp-field__hint">Reads the Gmail address already signed in to the browser, used only as the name beside each saved check. When there is none, the check is saved as a guest.</div>
+        </div>
+      </div>
+      <div class="lp-field" style="border-bottom:0">
+        <div>
+          <div class="lp-field__label">Page access on http and https</div>
+          <div class="lp-field__hint">Required to read public page content and detect payment fields. Text field values are never read.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Questions</h2>
+    <div class="lp-grid lp-grid--2">
+      <div class="lp-card">
+        <b style="font-size:13px">Does it need a server to work?</b>
+        <p class="lp-note" style="margin:7px 0 0">No. The scanner runs fully inside the extension. The local server is only for the practice pages.</p>
+      </div>
+      <div class="lp-card">
+        <b style="font-size:13px">Does it read what I type?</b>
+        <p class="lp-note" style="margin:7px 0 0">No. It checks field names to detect card or PIN inputs. Values, passwords and messages are never read or stored.</p>
+      </div>
+      <div class="lp-card">
+        <b style="font-size:13px">Why are all records zero?</b>
+        <p class="lp-note" style="margin:7px 0 0">This is a new project. There are no ratings, reviews, verified sellers or alerts yet, and nothing is seeded to look busy.</p>
+      </div>
+      <div class="lp-card">
+        <b style="font-size:13px">Can it guarantee a seller is honest?</b>
+        <p class="lp-note" style="margin:7px 0 0">No. It reports visible warning signs. Always check the permit, reviews and receipt yourself.</p>
+      </div>
+    </div>
+
+    <footer class="lp-footer">
+      <span>LigtasPangan v1.0.0 · CCDI Sorsogon BSIT 3A</span>
+      <span>Warning tool only. It never processes payments.</span>
+    </footer>
+  </div>
+
+  <script src="../pinulongan/giya.js"></script>
+</body>
+</html>

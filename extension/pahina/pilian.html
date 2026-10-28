@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LigtasPangan - Settings</title>
+  <link rel="stylesheet" href="../estilo/itsura.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <div class="lp-shell">
+    <header class="lp-topbar">
+      <div class="lp-mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M12 2.5 4.5 5.6v6.1c0 4.6 3.1 8.6 7.5 9.8 4.4-1.2 7.5-5.2 7.5-9.8V5.6L12 2.5Z" fill="none" stroke="#67e8f9" stroke-width="1.7" stroke-linejoin="round" />
+          <path d="m8.9 12.1 2.1 2.1 4.2-4.4" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div>
+        <div class="lp-brandname">Ligtas<span>Pangan</span></div>
+        <div class="lp-brandsub">settings and records</div>
+      </div>
+      <nav class="lp-nav">
+        <a href="giya.html">Install guide</a>
+        <span class="lp-badge lp-badge--violet" id="lp-version">v1.0.0</span>
+      </nav>
+    </header>
+
+    <div class="lp-tabs" role="tablist">
+      <button class="lp-tab active" data-tab="overview" role="tab">Overview</button>
+      <button class="lp-tab" data-tab="protection" role="tab">Protection</button>
+      <button class="lp-tab" data-tab="sellers" role="tab">Sellers</button>
+      <button class="lp-tab" data-tab="records" role="tab">Admin</button>
+      <button class="lp-tab" data-tab="privacy" role="tab">Privacy</button>
+      <button class="lp-tab" data-tab="about" role="tab">About</button>
+    </div>
+
+    <section class="lp-tabpanel active" id="tab-overview">
+      <h1 style="font-size:30px">Your food order guard</h1>
+      <p class="lp-lead">LigtasPangan reads the public content and payment form of food ordering pages, then warns you before you pay when something looks wrong.</p>
+
+      <div class="lp-grid lp-grid--4" style="margin-top:24px">
+        <div class="lp-stat">
+          <div class="lp-stat__label">Seller ratings</div>
+          <div class="lp-stat__value cyan">0.0</div>
+          <div class="lp-stat__hint">No ratings yet</div>
+        </div>
+        <div class="lp-stat">
+          <div class="lp-stat__label">Reviews</div>
+          <div class="lp-stat__value" id="lp-total-reviews">0</div>
+          <div class="lp-stat__hint">No reviews submitted</div>
+        </div>
+        <div class="lp-stat">
+          <div class="lp-stat__label">Verified sellers</div>
+          <div class="lp-stat__value" id="lp-total-sellers">0</div>
+          <div class="lp-stat__hint">No verified sellers yet</div>
+        </div>
+        <div class="lp-stat">
+          <div class="lp-stat__label">Community reports</div>
+          <div class="lp-stat__value violet" id="lp-total-reports">0</div>
+          <div class="lp-stat__hint">No reports submitted</div>
+        </div>
+      </div>
+
+      <h2>How a check runs</h2>
+      <div class="lp-grid lp-grid--3">
+        <div class="lp-step">
+          <div class="lp-step__num">01</div>
+          <div>
+            <b>Reads public signals</b>
+            <p>Menu prices, contact details, business permit, payment fields and review text are inspected on your device.</p>
+          </div>
+        </div>
+        <div class="lp-step">
+          <div class="lp-step__num">02</div>
+          <div>
+            <b>Scores the page</b>
+            <p>Weighted rules produce a risk score from 0 to 100 and a list of reasons for the result.</p>
+          </div>
+        </div>
+        <div class="lp-step">
+          <div class="lp-step__num">03</div>
+          <div>
+            <b>Warns before payment</b>
+            <p>Safe pages show a short confirmation. Unsafe pages show a warning bar first, then the full alert page.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Test the scanner</h2>
+      <div class="lp-card">
+        <p class="lp-note" style="margin-top:0">Six practice pages are included with the project. Start the local test server from the project folder, then open the test hub.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
+          <button class="lp-btn lp-btn--primary" id="lp-open-guide" type="button">Open install guide</button>
+          <button class="lp-btn" id="lp-open-tests" type="button">Open test pages</button>
+        </div>
+        <p class="lp-note" style="margin-bottom:0;margin-top:10px">Test pages address: <span class="lp-code">http://127.0.0.1:4173/pagsubok/</span></p>
+      </div>
+    </section>
+
+    <section class="lp-tabpanel" id="tab-protection">
+      <h1 style="font-size:28px">Protection settings</h1>
+      <p class="lp-lead">Changes are saved in your browser and apply to open tabs after a page refresh.</p>
+
+      <div class="lp-card" style="margin-top:20px">
+        <div class="lp-field">
+          <div>
+            <div class="lp-field__label">Enable LigtasPangan</div>
+            <div class="lp-field__hint">Turn page scanning, the badge and all warnings on or off.</div>
+          </div>
+          <label class="lp-switch"><input type="checkbox" id="lp-enabled" /><span></span></label>
+        </div>
+        <div class="lp-field">
+          <div>
+            <div class="lp-field__label">Show the floating badge</div>
+            <div class="lp-field__hint">A small badge at the bottom right with the live risk score.</div>
+          </div>
+          <label class="lp-switch"><input type="checkbox" id="lp-show-badge" /><span></span></label>
+        </div>
+        <div class="lp-field">
+          <div>
+            <div class="lp-field__label">Show the warning bar and alert page</div>
+            <div class="lp-field__hint">Warns you before you enter payment details or send money.</div>
+          </div>
+          <label class="lp-switch"><input type="checkbox" id="lp-show-warning" /><span></span></label>
+        </div>
+        <div class="lp-field">
+          <div>
+            <div class="lp-field__label">Show the safe page message</div>
+            <div class="lp-field__hint">Confirms a page passed the check with a short message.</div>
+          </div>
+          <label class="lp-switch"><input type="checkbox" id="lp-show-safe" /><span></span></label>
+        </div>
+        <div class="lp-field">
+          <div>
+            <div class="lp-field__label">Warn me starting at</div>
+            <div class="lp-field__hint">Choose the lowest verdict that opens the warning bar.</div>
+          </div>
+          <select class="lp-select" id="lp-warn-level">
+            <option value="caution">Caution and unsafe</option>
+            <option value="danger">Unsafe only</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:8px;align-items:center;margin-top:14px">
+        <button class="lp-btn" id="lp-reset" type="button">Restore defaults</button>
+        <span class="lp-note" id="lp-saved"></span>
+      </div>
+    </section>
+
+    <section class="lp-tabpanel" id="tab-sellers">
+      <h1 style="font-size:28px">Seller lists</h1>
+      <p class="lp-lead">Trusted sellers never raise the warning bar. Blocked sellers are always treated as unsafe.</p>
+
+      <h2>Trusted sellers</h2>
+      <div class="lp-card">
+        <div style="display:flex;gap:8px">
+          <input class="lp-input" id="lp-trust-input" type="text" placeholder="example.com" style="flex:1" />
+          <button class="lp-btn" id="lp-trust-add" type="button">Add</button>
+        </div>
+        <div class="lp-chips" id="lp-trust-list" style="margin-top:12px"></div>
+      </div>
+
+      <h2>Blocked sellers</h2>
+      <div class="lp-card">
+        <div style="display:flex;gap:8px">
+          <input class="lp-input" id="lp-block-input" type="text" placeholder="example.com" style="flex:1" />
+          <button class="lp-btn" id="lp-block-add" type="button">Add</button>
+        </div>
+        <div class="lp-chips" id="lp-block-list" style="margin-top:12px"></div>
+      </div>
+    </section>
+
+    <section class="lp-tabpanel" id="tab-records">
+      <h1 style="font-size:28px">Admin records</h1>
+      <p class="lp-lead">Every page the scanner checks is listed here with its verdict and the account that made the check.</p>
+
+      <div class="lp-card" style="margin-top:20px">
+        <div class="lp-field" style="border-bottom:0">
+          <div>
+            <div class="lp-field__label">Checking as</div>
+            <div class="lp-field__hint" id="lp-admin-user">Loading account</div>
+          </div>
+          <span class="lp-badge" id="lp-admin-mode">--</span>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button class="lp-btn lp-btn--ghost lp-btn--sm" id="lp-new-guest" type="button">Start a new guest</button>
+        <span class="lp-note" id="lp-guest-note"></span>
+      </div>
+
+      <div class="lp-grid lp-grid--4" style="margin-top:16px">
+        <div class="lp-stat">
+          <div class="lp-stat__label">Safe checks</div>
+          <div class="lp-stat__value" id="lp-check-safe" style="color:#34d399">0</div>
+          <div class="lp-stat__hint">Pages marked safe</div>
+        </div>
+        <div class="lp-stat">
+          <div class="lp-stat__label">Caution checks</div>
+          <div class="lp-stat__value" id="lp-check-caution" style="color:#fbbf24">0</div>
+          <div class="lp-stat__hint">Pages marked caution</div>
+        </div>
+        <div class="lp-stat">
+          <div class="lp-stat__label">Unsafe checks</div>
+          <div class="lp-stat__value" id="lp-check-danger" style="color:#f87171">0</div>
+          <div class="lp-stat__hint">Pages marked unsafe</div>
+        </div>
+        <div class="lp-stat">
+          <div class="lp-stat__label">Total checks</div>
+          <div class="lp-stat__value cyan" id="lp-check-total">0</div>
+          <div class="lp-stat__hint">All recorded checks</div>
+        </div>
+      </div>
+
+      <h2>Safe and unsafe log</h2>
+      <div class="lp-card">
+        <div id="lp-scan-empty" class="lp-empty">
+          <b>No checks recorded yet</b>
+          Visit a food ordering page and the result is saved here with the account or guest name.
+        </div>
+        <div id="lp-scan-table" hidden>
+          <table class="lp-table">
+            <thead>
+              <tr><th>Site</th><th>Checked by</th><th>Verdict</th><th>Score</th><th>Date</th></tr>
+            </thead>
+            <tbody id="lp-scan-body"></tbody>
+          </table>
+          <button class="lp-btn lp-btn--ghost lp-btn--sm" id="lp-clear-scans" type="button" style="margin-top:12px">Clear log</button>
+        </div>
+      </div>
+
+      <h2>Reports from this browser</h2>
+      <div class="lp-card">
+        <div id="lp-records-empty" class="lp-empty">
+          <b>No reports yet</b>
+          Reports you submit from a page will appear here with the site, verdict and reason.
+        </div>
+        <div id="lp-records-table" hidden>
+          <table class="lp-table">
+            <thead>
+              <tr><th>Site</th><th>Checked by</th><th>Verdict</th><th>Score</th><th>Reason</th><th>Date</th></tr>
+            </thead>
+            <tbody id="lp-records-body"></tbody>
+          </table>
+          <button class="lp-btn lp-btn--ghost lp-btn--sm" id="lp-clear-records" type="button" style="margin-top:12px">Clear reports</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-tabpanel" id="tab-privacy">
+      <h1 style="font-size:28px">Privacy</h1>
+      <p class="lp-lead">The scanner is built to look at pages, not people.</p>
+      <div class="lp-card" style="margin-top:20px">
+        <ul class="lp-list-check">
+          <li>Page content is analysed on your device. No page content leaves the browser.</li>
+          <li>Card numbers, one-time PINs and passwords are detected by field name only. Their values are never read, copied or stored.</li>
+          <li>Reports are saved in this browser only. They are not uploaded to a server.</li>
+          <li>Checks are saved in this browser as a log, under the Gmail address of the signed in browser or a guest name when there is none.</li>
+          <li>No account creation, no sign in form, no analytics and no tracking identifiers are used.</li>
+          <li>Only the <span class="lp-code">storage</span>, <span class="lp-code">tabs</span> and <span class="lp-code">identity</span> permissions are requested, plus page access needed to scan food ordering sites.</li>
+          <li>Seller lists are stored with <span class="lp-code">chrome.storage.sync</span> and follow your browser profile.</li>
+        </ul>
+      </div>
+      <h2>What the scanner does not do</h2>
+      <div class="lp-card">
+        <ul class="lp-list-check">
+          <li>It does not process payments.</li>
+          <li>It does not read private messages, email or other tabs.</li>
+          <li>It does not guarantee that a seller is honest. It reports visible warning signs only.</li>
+          <li>It does not replace checking reviews, permits and receipts yourself.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lp-tabpanel" id="tab-about">
+      <h1 style="font-size:28px">About LigtasPangan</h1>
+      <p class="lp-lead">A browser extension that checks online food ordering pages for common fraud signals.</p>
+      <div class="lp-card" style="margin-top:20px">
+        <div class="lp-field">
+          <div>
+            <div class="lp-field__label">Version</div>
+            <div class="lp-field__hint">1.0.0, Manifest V3</div>
+          </div>
+        </div>
+        <div class="lp-field">
+          <div>
+            <div class="lp-field__label">Scan engine</div>
+            <div class="lp-field__hint">On-device weighted rule engine with 26 checks</div>
+          </div>
+        </div>
+        <div class="lp-field">
+          <div>
+            <div class="lp-field__label">Project</div>
+            <div class="lp-field__hint">CCDI Sorsogon, BSIT 3A mini capstone</div>
+          </div>
+        </div>
+        <div class="lp-field" style="border-bottom:0">
+          <div>
+            <div class="lp-field__label">Records</div>
+            <div class="lp-field__hint">All community records start at zero. This build ships with no ratings, reviews, sellers or alerts.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="lp-footer">
+      <span>LigtasPangan v1.0.0</span>
+      <span>Warning tool only. It never processes payments.</span>
+    </footer>
+  </div>
+
+  <script src="../pinulongan/pilian.js"></script>
+</body>
+</html>

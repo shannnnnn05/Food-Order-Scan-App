@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LigtasPangan</title>
+  <link rel="stylesheet" href="../estilo/itsura.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body class="lp-popup">
+  <div class="lp-shell">
+    <header class="lp-topbar">
+      <div class="lp-mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M12 2.5 4.5 5.6v6.1c0 4.6 3.1 8.6 7.5 9.8 4.4-1.2 7.5-5.2 7.5-9.8V5.6L12 2.5Z" fill="none" stroke="#67e8f9" stroke-width="1.7" stroke-linejoin="round" />
+          <path d="m8.9 12.1 2.1 2.1 4.2-4.4" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div>
+        <div class="lp-brandname">Ligtas<span>Pangan</span></div>
+        <div class="lp-brandsub">food order scanner</div>
+      </div>
+      <span class="lp-badge lp-badge--violet" id="lp-status" style="margin-left:auto">On</span>
+    </header>
+
+    <div class="lp-card" style="margin-bottom:12px;padding:11px 13px">
+      <div style="font-size:9.5px;letter-spacing:1.2px;text-transform:uppercase;color:#7f93aa;font-weight:700">Checking as</div>
+      <div class="lp-host" id="lp-who" style="margin-top:4px">--</div>
+    </div>
+
+    <section class="lp-card lp-card--glow" id="lp-verdict-card">
+      <div class="lp-verdict">
+        <div class="lp-gauge">
+          <svg width="92" height="92" viewBox="0 0 92 92">
+            <circle class="lp-gauge__track" cx="46" cy="46" r="35"></circle>
+            <circle class="lp-gauge__value" id="lp-gauge" cx="46" cy="46" r="35" stroke="#64748b" stroke-dasharray="219.9" stroke-dashoffset="219.9"></circle>
+          </svg>
+          <div class="lp-gauge__label">
+            <b id="lp-score">--</b>
+            <span>risk</span>
+          </div>
+        </div>
+        <div>
+          <h3 id="lp-title">Checking this page</h3>
+          <p id="lp-text">Reading the public content and payment form of the page you are viewing.</p>
+          <div class="lp-host" id="lp-host">--</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-card" id="lp-why-card" hidden style="margin-top:12px">
+      <div class="lp-section-title" id="lp-why-title">Why</div>
+      <ul class="lp-reasons" id="lp-reasons"></ul>
+    </section>
+
+    <section class="lp-card" id="lp-tips-card" hidden style="margin-top:12px">
+      <div class="lp-section-title">What to do</div>
+      <ul class="lp-reasons" id="lp-tips"></ul>
+    </section>
+
+    <div class="lp-grid lp-grid--2" style="margin-top:12px">
+      <div class="lp-stat">
+        <div class="lp-stat__label">Seller rating</div>
+        <div class="lp-stat__value cyan">0.0</div>
+        <div class="lp-stat__hint">0 reviews submitted</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat__label">Community reports</div>
+        <div class="lp-stat__value violet" id="lp-report-count">0</div>
+        <div class="lp-stat__hint">No records yet</div>
+      </div>
+    </div>
+
+    <div class="lp-grid lp-grid--2" style="margin-top:12px">
+      <button type="button" class="lp-btn" id="lp-rescan">Re-scan page</button>
+      <button type="button" class="lp-btn lp-btn--danger" id="lp-report">Report page</button>
+    </div>
+
+    <div class="lp-card" id="lp-report-box" hidden style="margin-top:12px">
+      <div class="lp-section-title">Report this page</div>
+      <textarea class="lp-textarea" id="lp-report-note" rows="3" placeholder="What looks wrong? Optional." style="width:100%"></textarea>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button type="button" class="lp-btn lp-btn--primary lp-btn--sm" id="lp-report-send">Submit report</button>
+        <button type="button" class="lp-btn lp-btn--ghost lp-btn--sm" id="lp-report-cancel">Cancel</button>
+      </div>
+      <p class="lp-note" style="margin:8px 0 0">Reports stay in your browser. Nothing is uploaded.</p>
+    </div>
+
+    <div class="lp-grid lp-grid--2" style="margin-top:14px">
+      <button type="button" class="lp-btn lp-btn--ghost" id="lp-settings">Settings</button>
+      <button type="button" class="lp-btn lp-btn--ghost" id="lp-home">Install guide</button>
+    </div>
+
+    <footer class="lp-footer">
+      <span>LigtasPangan v1.0.0</span>
+      <span>No payment data is read or stored</span>
+    </footer>
+  </div>
+
+  <script src="../pinulongan/kakanon.js"></script>
+  <script src="../pinulongan/pitik.js"></script>
+</body>
+</html>

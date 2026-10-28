@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campus Canteen Order - Online Delivery</title>
+  <link rel="stylesheet" href="estilo/pagsubok.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <div class="pk-wrap">
+    <a class="pk-back" href="index.html">← Practice pages</a>
+
+    <header class="pk-top">
+      <div class="pk-logo">🍱</div>
+      <div>
+        <h1>Campus Canteen Order</h1>
+        <p>Student meals delivered on campus</p>
+      </div>
+      <nav class="pk-nav">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="pk-hero">
+      <span class="pk-tag">Lunch bundle</span>
+      <h2>Rice meals delivered to your room</h2>
+      <p>Affordable student meals with free delivery inside the campus. Pay cash when the rider arrives.</p>
+    </section>
+
+    <div class="pk-grid">
+      <div>
+        <div class="pk-card">
+          <h2>Menu</h2>
+          <div data-menu>
+            <div class="pk-item" data-menu-price="75">
+              <div><b>Rice Meal Combo</b><small>Chicken, rice and vegetables</small></div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱75.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="65">
+              <div><b>Pancit Canton</b><small>Regular serving</small></div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱65.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="35">
+              <div><b>Bottled Water</b><small>500 ml</small></div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱35.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <p class="pk-note">Delivery fee is ₱20.00 inside the campus. No other charges.</p>
+        </div>
+
+        <div class="pk-card" id="about">
+          <h2>About us</h2>
+          <p class="pk-info">Campus Canteen Order is run by a group of students who cook meals in a shared kitchen near the school. Open Monday to Saturday, 10:00 AM to 6:00 PM.</p>
+        </div>
+
+        <div class="pk-card">
+          <h2>Reviews</h2>
+          <div data-review data-rating="5" data-review-time="2026-07-01T11:00:00+08:00" class="pk-review">
+            <b>Jayson</b><span class="pk-stars">★★★★★</span>
+            <p>Sobrang sarap! Best food ever! Fast delivery and very affordable. Highly recommended!</p>
+            <time>1 July 2026</time>
+          </div>
+          <div data-review data-rating="5" data-review-time="2026-07-01T11:04:00+08:00" class="pk-review">
+            <b>Jayson</b><span class="pk-stars">★★★★★</span>
+            <p>Sobrang sarap! Best food ever! Fast delivery and very affordable. Highly recommended!</p>
+            <time>1 July 2026</time>
+          </div>
+          <div data-review data-rating="5" data-review-time="2026-07-01T11:09:00+08:00" class="pk-review">
+            <b>Jayson</b><span class="pk-stars">★★★★★</span>
+            <p>Sobrang sarap! Best food ever! Fast delivery and very affordable. Highly recommended!</p>
+            <time>1 July 2026</time>
+          </div>
+          <div data-review data-rating="5" data-review-time="2026-07-01T11:15:00+08:00" class="pk-review">
+            <b>Jayson</b><span class="pk-stars">★★★★★</span>
+            <p>Sobrang sarap! Best food ever! Fast delivery and very affordable. Highly recommended!</p>
+            <time>1 July 2026</time>
+          </div>
+          <div data-review data-rating="5" data-review-time="2026-07-01T11:21:00+08:00" class="pk-review">
+            <b>Jayson</b><span class="pk-stars">★★★★★</span>
+            <p>Sobrang sarap! Best food ever! Fast delivery and very affordable. Highly recommended!</p>
+            <time>1 July 2026</time>
+          </div>
+          <div data-review data-rating="5" data-review-time="2026-07-01T11:28:00+08:00" class="pk-review">
+            <b>Jayson</b><span class="pk-stars">★★★★★</span>
+            <p>Sobrang sarap! Best food ever! Fast delivery and very affordable. Highly recommended!</p>
+            <time>1 July 2026</time>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="pk-card" data-checkout>
+          <h2>Your order</h2>
+          <div class="pk-row"><span>Rice Meal Combo × 1</span><span data-checkout-price="75">₱75.00</span></div>
+          <div class="pk-row"><span>Pancit Canton × 1</span><span data-checkout-price="65">₱65.00</span></div>
+          <div class="pk-row"><span>Bottled Water × 1</span><span data-checkout-price="35">₱35.00</span></div>
+          <div class="pk-row"><span>Delivery fee</span><span>₱20.00</span></div>
+          <div class="pk-row pk-total"><span>Total</span><span>₱195.00</span></div>
+
+          <div style="margin-top:14px">
+            <label class="pk-field">
+              <span>Name</span>
+              <input type="text" name="customer_name" placeholder="Your name" />
+            </label>
+            <label class="pk-field">
+              <span>Mobile number</span>
+              <input type="tel" name="customer_phone" placeholder="09XX XXX XXXX" />
+            </label>
+            <label class="pk-field">
+              <span>Delivery address</span>
+              <input type="text" name="delivery_address" placeholder="Dorm, street, barangay" />
+            </label>
+          </div>
+
+          <button class="pk-btn" type="button">Place order (cash on delivery)</button>
+          <p class="pk-note">Prepare the exact amount. The rider will call you when the order is nearby.</p>
+        </div>
+
+        <div class="pk-card" id="contact">
+          <h2>Contact</h2>
+          <p class="pk-info">
+            Mobile: <b>0919 223 4455</b><br />
+            Email: campuscanteenorder@gmail.com<br />
+            Kitchen: Mabini Street, Barangay Poblacion, Sorsogon City
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <p class="pk-fine">Campus Canteen Order · Student-run kitchen</p>
+  </div>
+
+  <div class="pk-practice">Practice page · <a href="index.html">back to hub</a></div>
+</body>
+</html>

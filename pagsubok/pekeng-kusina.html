@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuickBites - Order Now</title>
+  <link rel="stylesheet" href="estilo/pagsubok.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <div class="pk-wrap">
+    <a class="pk-back" href="index.html">← Practice pages</a>
+
+    <header class="pk-top">
+      <div class="pk-logo">🍔</div>
+      <div>
+        <h1>QuickBites</h1>
+        <p>Order now · Metro-wide delivery</p>
+      </div>
+      <nav class="pk-nav">
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+    </header>
+
+    <section class="pk-hero">
+      <span class="pk-tag">Fast delivery</span>
+      <h2>Family boxes and chicken buckets</h2>
+      <p>Freshly cooked every hour. Fill in your card below and your food will be on the way in minutes.</p>
+    </section>
+
+    <div class="pk-grid">
+      <div>
+        <div class="pk-card" id="menu">
+          <h2>Menu</h2>
+          <div data-menu>
+            <div class="pk-item" data-menu-price="199">
+              <div>
+                <b>Family Burger Box</b>
+                <small>Four burgers, fries and drinks</small>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱199.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="149">
+              <div>
+                <b>Chicken Bucket</b>
+                <small>Six pieces, original recipe</small>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱149.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="99">
+              <div>
+                <b>Carbonara Pasta</b>
+                <small>Creamy sauce with bacon bits</small>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱99.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="pk-item" data-menu-price="49">
+              <div>
+                <b>Iced Coffee</b>
+                <small>Cold brew, large cup</small>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <span class="pk-price">₱49.00</span>
+                <button class="pk-add" type="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pk-card" id="reviews">
+          <h2>Reviews</h2>
+          <div data-review data-rating="5" data-review-time="2026-07-04T09:00:00+08:00" class="pk-review">
+            <b>Foodie Queen</b><span class="pk-stars">★★★★★</span>
+            <p>Best food ever! Fast delivery and the packaging is perfect. Order now!</p>
+            <time>4 July 2026</time>
+          </div>
+          <div data-review data-rating="5" data-review-time="2026-07-04T09:12:00+08:00" class="pk-review">
+            <b>Foodie Queen</b><span class="pk-stars">★★★★★</span>
+            <p>Best food ever! Fast delivery and the packaging is perfect. Order now!</p>
+            <time>4 July 2026</time>
+          </div>
+          <div data-review data-rating="5" data-review-time="2026-07-04T09:25:00+08:00" class="pk-review">
+            <b>Foodie Queen</b><span class="pk-stars">★★★★★</span>
+            <p>Best food ever! Fast delivery and the packaging is perfect. Order now!</p>
+            <time>4 July 2026</time>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="pk-card" data-checkout>
+          <h2>Your order</h2>
+          <div class="pk-row"><span>Family Burger Box × 1</span><span data-checkout-price="249">₱249.00</span></div>
+          <div class="pk-row"><span>Chicken Bucket × 1</span><span data-checkout-price="199">₱199.00</span></div>
+          <div class="pk-row"><span>Carbonara Pasta × 1</span><span data-checkout-price="149">₱149.00</span></div>
+          <div class="pk-row"><span>Iced Coffee × 1</span><span data-checkout-price="99">₱99.00</span></div>
+          <div class="pk-row pk-fee"><span>Processing fee</span><span>₱49.00</span></div>
+          <div class="pk-row pk-total"><span>Total</span><span>₱745.00</span></div>
+
+          <form action="" method="post" style="margin-top:14px">
+            <label class="pk-field">
+              <span>Name on card</span>
+              <input type="text" name="cardholder" placeholder="Full name" />
+            </label>
+            <label class="pk-field">
+              <span>Card number</span>
+              <input type="text" name="card_number" inputmode="numeric" placeholder="0000 0000 0000 0000" />
+            </label>
+            <div class="pk-two">
+              <label class="pk-field">
+                <span>Expiry</span>
+                <input type="text" name="card_expiry" placeholder="MM/YY" />
+              </label>
+              <label class="pk-field">
+                <span>CVV</span>
+                <input type="text" name="card_cvv" inputmode="numeric" placeholder="123" />
+              </label>
+            </div>
+            <button class="pk-btn pk-btn--danger" type="submit">Place order and pay</button>
+          </form>
+          <p class="pk-note">Your order is confirmed only after the payment is received. No refunds for cancelled orders.</p>
+        </div>
+
+        <div class="pk-card">
+          <h2>Delivery</h2>
+          <p class="pk-info">Metro-wide delivery within 45 minutes. Rider will message you before arrival.</p>
+        </div>
+      </aside>
+    </div>
+
+    <p class="pk-fine">QuickBites Online Food Services</p>
+  </div>
+
+  <div class="pk-practice">Practice page · <a href="index.html">back to hub</a></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "LigtasPangan - Food Ordering Safety Checker",
+  "short_name": "LigtasPangan",
+  "version": "1.0.0",
+  "description": "Checks online food ordering pages for fake sellers, phishing payment forms, price traps and fake reviews, then warns you before you pay.",
+  "author": "CCDI Sorsogon BSIT 3A",
+  "permissions": ["storage", "tabs", "identity", "identity.email"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "pinulongan/bantay.js"
+  },
+  "action": {
+    "default_popup": "pahina/pitik.html",
+    "default_title": "LigtasPangan - check this page",
+    "default_icon": {
+      "16": "ladawan/icon16.png",
+      "32": "ladawan/icon32.png",
+      "48": "ladawan/icon48.png",
+      "128": "ladawan/icon128.png"
+    }
+  },
+  "options_page": "pahina/pilian.html",
+  "icons": {
+    "16": "ladawan/icon16.png",
+    "32": "ladawan/icon32.png",
+    "48": "ladawan/icon48.png",
+    "128": "ladawan/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["pinulongan/kakanon.js", "pinulongan/patanid.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["pinulongan/tuklas.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}

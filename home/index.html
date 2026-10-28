@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LigtasPangan - Install Home</title>
+  <link rel="stylesheet" href="../extension/estilo/itsura.css" />
+  <link rel="icon" href="data:," />
+  <meta name="ligtas-pangan-page" content="project" />
+</head>
+<body>
+  <div class="lp-shell">
+    <header class="lp-topbar">
+      <div class="lp-mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M12 2.5 4.5 5.6v6.1c0 4.6 3.1 8.6 7.5 9.8 4.4-1.2 7.5-5.2 7.5-9.8V5.6L12 2.5Z" fill="none" stroke="#67e8f9" stroke-width="1.7" stroke-linejoin="round" />
+          <path d="m8.9 12.1 2.1 2.1 4.2-4.4" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div>
+        <div class="lp-brandname">Ligtas<span>Pangan</span></div>
+        <div class="lp-brandsub">install home</div>
+      </div>
+      <nav class="lp-nav">
+        <a href="#install">Install</a>
+        <a href="#features">Features</a>
+        <a href="#records">Records</a>
+        <a href="#testing">Testing</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="lp-hero">
+      <div>
+        <span class="lp-eyebrow"><i></i> Browser extension · CCDI Sorsogon BSIT 3A</span>
+        <h1 style="margin-top:16px">Check a food page before you pay.</h1>
+        <p class="lp-lead" style="font-size:14.5px">LigtasPangan reads the public content and payment form of online food ordering pages. It looks for fake sellers, phishing payment forms, hidden fees and copied reviews, then shows a clear warning before any money leaves your hands.</p>
+        <div class="lp-hero__actions">
+          <a class="lp-btn lp-btn--primary" href="#install">How to install</a>
+          <a class="lp-btn" href="#testing">Test the scanner</a>
+        </div>
+        <p class="lp-note" style="margin-top:16px">No server needed. The scanner runs inside the browser. The local test server is only for the practice pages.</p>
+      </div>
+      <div class="lp-visual">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <span class="lp-badge lp-badge--violet">Page scan</span>
+          <span class="lp-badge lp-badge--danger">Unsafe</span>
+        </div>
+        <div class="lp-visual__row"><b>seller-menu.example</b><span>live page</span></div>
+        <div class="lp-scanline"></div>
+        <div class="lp-visual__row"><b>Card and PIN fields</b><span style="color:#f87171">found</span></div>
+        <div class="lp-visual__row"><b>Business permit</b><span style="color:#f87171">missing</span></div>
+        <div class="lp-visual__row"><b>Checkout total</b><span style="color:#f87171">+40%</span></div>
+        <div class="lp-visual__row"><b>Risk score</b><span style="color:#f87171">96 / 100</span></div>
+      </div>
+    </section>
+
+    <div class="lp-grid lp-grid--4" style="margin-top:32px">
+      <div class="lp-stat">
+        <div class="lp-stat__label">Ratings</div>
+        <div class="lp-stat__value">0.0</div>
+        <div class="lp-stat__hint">No ratings yet</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat__label">Reviews</div>
+        <div class="lp-stat__value">0</div>
+        <div class="lp-stat__hint">No reviews yet</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat__label">Verified sellers</div>
+        <div class="lp-stat__value">0</div>
+        <div class="lp-stat__hint">No sellers verified yet</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat__label">Community alerts</div>
+        <div class="lp-stat__value">0</div>
+        <div class="lp-stat__hint">No alerts published</div>
+      </div>
+    </div>
+    <p class="lp-note" style="margin-top:10px">These records are intentionally empty. The project is new and nothing is seeded to make it look busy.</p>
+
+    <hr class="lp-divider" />
+
+    <section id="install">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <h1 style="font-size:30px;margin:0">Install in your browser</h1>
+        <span class="lp-badge lp-badge--violet">Manifest V3</span>
+      </div>
+      <p class="lp-lead">Chrome, Edge and other Chromium browsers take the same folder.</p>
+
+      <div class="lp-grid lp-grid--3" style="margin-top:18px">
+        <div class="lp-step">
+          <div class="lp-step__num">01</div>
+          <div>
+            <b>Unzip the project</b>
+            <p>Extract the package anywhere you can keep it, for example inside your Documents folder. Do not delete the folder after installing.</p>
+          </div>
+        </div>
+        <div class="lp-step">
+          <div class="lp-step__num">02</div>
+          <div>
+            <b>Open the extensions page</b>
+            <p>Chrome: <span class="lp-kbd">chrome://extensions</span><br />Edge: <span class="lp-kbd">edge://extensions</span></p>
+          </div>
+        </div>
+        <div class="lp-step">
+          <div class="lp-step__num">03</div>
+          <div>
+            <b>Load the extension folder</b>
+            <p>Turn on Developer mode, click Load unpacked, then select the <span class="lp-kbd">extension</span> folder and confirm.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lp-grid lp-grid--2" style="margin-top:14px">
+        <div class="lp-card">
+          <div class="lp-section-title">After loading</div>
+          <ul class="lp-list-check">
+            <li>The install guide opens automatically. Keep it open until you finish setup.</li>
+            <li>Pin the LigtasPangan icon from the puzzle piece menu.</li>
+            <li>Open a food ordering page. A badge appears at the bottom right.</li>
+            <li>Click the badge or the toolbar icon to see the score and the reasons.</li>
+          </ul>
+        </div>
+        <div class="lp-card">
+          <div class="lp-section-title">Requirements</div>
+          <ul class="lp-list-check">
+            <li>Chrome 109, Edge 109 or any recent Chromium browser.</li>
+            <li>No npm install needed for the extension.</li>
+            <li>Node.js 18 or newer only if you want to run the practice pages.</li>
+            <li>No account and no internet connection needed for scanning.</li>
+            <li>A Gmail address is only used as a label when the browser is already signed in.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="lp-divider" />
+
+    <section id="features">
+      <h1 style="font-size:30px">What it looks for</h1>
+      <p class="lp-lead">Each rule adds weight to a risk score from 0 to 100. Every point is explained in plain language.</p>
+      <div class="lp-grid lp-grid--3" style="margin-top:18px">
+        <div class="lp-card">
+          <span class="lp-badge lp-badge--violet">01 · Seller</span>
+          <h3 style="margin:11px 0 5px;font-size:15px">Fake or missing identity</h3>
+          <p class="lp-note" style="margin:0">No business permit, no physical address, no contact number, or a page that hides who is selling.</p>
+        </div>
+        <div class="lp-card">
+          <span class="lp-badge lp-badge--violet">02 · Payment</span>
+          <h3 style="margin:11px 0 5px;font-size:15px">Phishing payment forms</h3>
+          <p class="lp-note" style="margin:0">Card, password or one-time PIN fields, insecure form actions and forms that post to another site.</p>
+        </div>
+        <div class="lp-card">
+          <span class="lp-badge lp-badge--violet">03 · Price</span>
+          <h3 style="margin:11px 0 5px;font-size:15px">Price traps</h3>
+          <p class="lp-note" style="margin:0">A checkout total that is higher than the advertised price, or fees that appear only at the last step.</p>
+        </div>
+        <div class="lp-card">
+          <span class="lp-badge lp-badge--violet">04 · Reviews</span>
+          <h3 style="margin:11px 0 5px;font-size:15px">Copied reviews</h3>
+          <p class="lp-note" style="margin:0">Repeated wording and bursts of perfect ratings posted within a short window.</p>
+        </div>
+        <div class="lp-card">
+          <span class="lp-badge lp-badge--violet">05 · Domain</span>
+          <h3 style="margin:11px 0 5px;font-size:15px">Risky addresses</h3>
+          <p class="lp-note" style="margin:0">No HTTPS, raw IP addresses, punycode brand imitation, hyphen-heavy hosts and high-abuse domains.</p>
+        </div>
+        <div class="lp-card">
+          <span class="lp-badge lp-badge--violet">06 · Payment demand</span>
+          <h3 style="margin:11px 0 5px;font-size:15px">Advance payment pressure</h3>
+          <p class="lp-note" style="margin:0">Full payment required before verification, especially when no recognized gateway is used.</p>
+        </div>
+      </div>
+
+      <h2>What you will see on a page</h2>
+      <div class="lp-grid lp-grid--2">
+        <div class="lp-card lp-card--glow">
+          <span class="lp-badge lp-badge--safe">Safe result</span>
+          <h3 style="margin:12px 0 6px;font-size:17px">This is a safe and good food ordering app</h3>
+          <p class="lp-note" style="margin:0">A green message appears at the top of the page. The badge stays at the bottom right with the risk score and the good signs that were found.</p>
+        </div>
+        <div class="lp-card" style="border-color:rgba(239,68,68,0.32)">
+          <span class="lp-badge lp-badge--danger">Caution or unsafe</span>
+          <h3 style="margin:12px 0 6px;font-size:17px">This Page is not safe, see it for yourself. Just click the OK to proceed</h3>
+          <p class="lp-note" style="margin:0">A red warning bar appears first. Press OK to open the full alert page with every reason, the score and the steps you should take.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="lp-divider" />
+
+    <section id="records">
+      <h1 style="font-size:30px">Records</h1>
+      <p class="lp-lead">This is a new mini capstone project, so there are no community records yet. Nothing is simulated.</p>
+      <div class="lp-card" style="margin-top:16px">
+        <table class="lp-table">
+          <thead>
+            <tr><th>Record</th><th>Count</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Seller ratings</td><td>0.0</td><td>No ratings yet</td></tr>
+            <tr><td>Reviews</td><td>0</td><td>No reviews yet</td></tr>
+            <tr><td>Verified sellers</td><td>0</td><td>No sellers verified yet</td></tr>
+            <tr><td>Community alerts</td><td>0</td><td>No alerts published</td></tr>
+            <tr><td>Reports</td><td>0</td><td>No reports submitted</td></tr>
+          </tbody>
+        </table>
+        <p class="lp-note" style="margin-bottom:0">Reports you submit in the extension are stored only in your own browser and appear in Settings, under Records.</p>
+      </div>
+    </section>
+
+    <hr class="lp-divider" />
+
+    <section id="testing">
+      <h1 style="font-size:30px">Test the scanner</h1>
+      <p class="lp-lead">Six practice pages are included. They are inert and never charge money.</p>
+      <div class="lp-card" style="margin-top:16px">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <span class="lp-code">node serve/server.js</span>
+          <span class="lp-note">Run this once from the project folder.</span>
+        </div>
+        <p class="lp-note">Then open <span class="lp-code">http://127.0.0.1:4173/pagsubok/</span> and pick a page. The test hub explains the result you should see for each scenario.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+          <a class="lp-btn lp-btn--primary" href="http://127.0.0.1:4173/pagsubok/">Open test hub</a>
+          <a class="lp-btn" href="#install">Read install steps</a>
+        </div>
+        <p class="lp-note" style="margin-bottom:0">The test hub only opens while the local server is running.</p>
+      </div>
+    </section>
+
+    <hr class="lp-divider" />
+
+    <section id="privacy">
+      <h1 style="font-size:30px">Privacy</h1>
+      <div class="lp-grid lp-grid--2" style="margin-top:16px">
+        <div class="lp-card">
+          <ul class="lp-list-check">
+            <li>Page content is analysed on your device. Nothing is uploaded.</li>
+            <li>Card numbers, PINs and passwords are never read. Only field names are checked.</li>
+            <li>No account and no sign in are needed. No tracking and no analytics.</li>
+            <li>Only a Gmail address from an already signed in browser is used, as the name beside each check. Without one the check is saved as a guest.</li>
+            <li>Reports stay in your browser and can be cleared any time.</li>
+          </ul>
+        </div>
+        <div class="lp-card">
+          <ul class="lp-list-check">
+            <li>The extension asks for storage, tabs and page access on http and https pages.</li>
+            <li>It does not read email, private messages or other tabs.</li>
+            <li>It never processes payments and never stores card data.</li>
+            <li>A safe result is not a guarantee. Always check the permit, reviews and receipt.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="lp-divider" />
+
+    <h1 style="font-size:30px">Questions</h1>
+    <div class="lp-grid lp-grid--2" style="margin-top:16px">
+      <div class="lp-card">
+        <b style="font-size:13px">Why are all records zero?</b>
+        <p class="lp-note" style="margin:7px 0 0">The project has not been used by real sellers or reviewers yet. Zero is the honest starting point.</p>
+      </div>
+      <div class="lp-card">
+        <b style="font-size:13px">Does the extension need the local server?</b>
+        <p class="lp-note" style="margin:7px 0 0">No. The server only serves the practice pages. Scanning works on any website without it.</p>
+      </div>
+      <div class="lp-card">
+        <b style="font-size:13px">Will it warn me on every website?</b>
+        <p class="lp-note" style="margin:7px 0 0">No. Pages that do not look like an online seller with a payment form are skipped, so the badge stays hidden.</p>
+      </div>
+      <div class="lp-card">
+        <b style="font-size:13px">Can I trust a safe result with money?</b>
+        <p class="lp-note" style="margin:7px 0 0">Treat it as one signal. Pay through a recognized gateway and keep the receipt. The tool warns, it does not insure.</p>
+      </div>
+    </div>
+
+    <footer class="lp-footer">
+      <span>LigtasPangan v1.0.0 · CCDI Sorsogon BSIT 3A</span>
+      <span>Warning tool only. It never processes payments.</span>
+    </footer>
+  </div>
+</body>
+</html>
